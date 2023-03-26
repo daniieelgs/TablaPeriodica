@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">Taula Periodica</string>
+    <string name="btnStudy">Study</string>
+    <string name="btnPlay">Play</string>
+    <string name="title">Periodic Table</string>
+    <string name="boil">Boling point:</string>
+    <string name="category">Category:</string>
+    <string name="molarHeat">Molar heat:</string>
+    <string name="period">Period:</string>
+    <string name="phase">Phase:</string>
+    <string name="noble_gas">Noble gas</string>
+    <string name="alkali_metal">Alkali metal</string>
+    <string name="alkaline_earth_metal">Alkaline earth metal</string>
+    <string name="semimetal">Semimetal</string>
+    <string name="metalloid">Metalloid</string>
+    <string name="other_metal">Other metal</string>
+    <string name="polyatomic_nonmetal">Polyatomic nonmetal</string>
+    <string name="diatomic_nonmetal">Diatomic nonmetal</string>
+    <string name="post_transition_metal">Post-transition metal</string>
+    <string name="transition_metal">Transition metal</string>
+    <string name="lanthanide">Lanthanide</string>
+    <string name="actinide">Actinide</string>
+    <string name="unknown">Unknown</string>
+
+    <string name="gas">Gas</string>
+    <string name="solid">Solid</string>
+    <string name="liquid">Liquid</string>
+
+    <string name="menu_category">Category</string>
+    <string name="menu_phase">Phase</string>
+    <string name="menu_order">Order by</string>
+    <string name="menu_order_symbol">Symbol</string>
+    <string name="menu_order_number">Number</string>
+
+    <string name="discover">Discover by: </string>
+    <string name="named">Named by: </string>
+    <string name="appearance">Appearance: </string>
+    <string name="melt">Melt: </string>
+    <string name="color">Color: </string>
+    <string name="electron_configuration">Electron Configuration: </string>
+    <string name="electron_configuration_semantic">Electron Configuration Semantic: </string>
+    <string name="electron_affinity">Electron Affinity: </string>
+    <string name="electronegativity_pauling">Electronegativity Pauling: </string>
+    <string name="ionization_energies">Ionization Energies: </string>
+    <string name="shells">Shells: </string>
+    <string name="summary">Summary: </string>
+    <string name="source">Source: </string>
+
+    <string name="title_kahoot">What <i>phase</i> is <u>%s</u>?</string>
+    <string name="score">Score: </string>
+    <string name="highest_score">Highest Score: </string>
+
+    <string name="phase_solid">Solid</string>
+    <string name="phase_liquid">Liquid</string>
+    <string name="phase_gas">Gas</string>
+    <string name="phase_unknown">Unknown</string>
+
+    <string name="title_lost">Game Over</string>
+    <string name="message_lost">Oh, oh... You have lost...\nElement %s is %s phase\nScore: %d\nHighest Score: %d</string>
+    <string name="continue_button">Continue</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="close_button">Close</string>
+
+    <string name="error_save">Error: Could not save score</string>
+    <string name="error_read">Error: Could not read score</string>
+
+    <string name="exit">Exit</string>
+    <string name="exit_question">Are you sure want leave?</string>
+
+    <string name="atomic">Atomic: </string>
+    <string name="symbol">Symbol: </string>
+    <string name="name">Name: </string>
+    <string name="mass">Mass: </string>
+
+    <string name="decimal_separator">,</string>
+
+</resources>

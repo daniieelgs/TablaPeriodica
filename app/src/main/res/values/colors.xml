@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_green">#21AC64</color>
+    <color name="light_red">#8E2D44</color>
+    <color name="bg_noble_gas">#3A2151</color>
+    <color name="bg_alkali_metal">#6C3B01</color>
+    <color name="bg_alkaline_earth_metal">#846011</color>
+    <color name="bg_semimetal">#015146</color>
+    <color name="bg_other_metal">#3E6418</color>
+    <color name="bg_post_transition_metal">#003666</color>
+    <color name="bg_transition_metal">#711019</color>
+    <color name="bg_lanthanide">#402C17</color>
+    <color name="bg_actinide">#732E4C</color>
+    <color name="bg_unknown">#222222</color>
+    <color name="phase_solid">#B5B5B5</color>
+    <color name="phase_liquid">#9999FF</color>
+    <color name="phase_gas">#FF4444</color>
+    <color name="phase_unkown">#777777</color>
+    <color name="star_favorite">#FFFFFF</color>
+    <color name="open_view">#3A2151</color>
+    <color name="link_color">#672DD6</color>
+    <color name="wrong_select">#E40909</color>
+    <color name="correct_select">#3EE409</color>
+
+    <color name="snackbar_error">#FFFF5733</color>
+    <color name="snackbar_error_text">@color/black</color>
+    <color name="snackbar_error_action">#FF9929F7</color>
+</resources>

@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".InfoElement">
+
+
+        <TextView
+            android:id="@+id/tvNamed"
+            style="@style/textContentElements"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline11"
+            app:layout_constraintStart_toEndOf="@+id/tvNamedTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvDiscover" />
+
+        <TextView
+            android:id="@+id/tvAppearance"
+            style="@style/textContentElements"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline11"
+            app:layout_constraintStart_toEndOf="@+id/tvAppearanceTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvNamed" />
+
+        <TextView
+            android:id="@+id/tvMelt"
+            style="@style/textContentElements"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/guideline11"
+            app:layout_constraintStart_toEndOf="@+id/tvMeltTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvAppearance" />
+
+        <TextView
+            android:id="@+id/tvCpkColor"
+            style="@style/textContentElements"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            app:layout_constraintStart_toEndOf="@+id/tvCpkColorTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvMelt" />
+
+        <TextView
+            android:id="@+id/tvElectronConfig"
+            style="@style/textContentElements"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/guideline11"
+            app:layout_constraintStart_toEndOf="@+id/tvElectronConfigTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvCpkColor" />
+
+        <TextView
+            android:id="@+id/tvElectronAffinity"
+            style="@style/textContentElements"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/guideline10"
+            app:layout_constraintStart_toEndOf="@+id/tvElectronAffinityTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvElectronConfigSemantic" />
+
+        <TextView
+            android:id="@+id/tvElectronPauling"
+            style="@style/textContentElements"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/guideline10"
+            app:layout_constraintStart_toEndOf="@+id/tvElectronPaulingTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvElectronAffinity" />
+
+        <TextView
+            android:id="@+id/tvIonizationEnergies"
+            style="@style/textContentElements"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/guideline10"
+            app:layout_constraintStart_toEndOf="@+id/tvIonizationEnergiesTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvElectronPauling" />
+
+        <TextView
+            android:id="@+id/tvShells"
+            style="@style/textContentElements"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/guideline10"
+            app:layout_constraintStart_toEndOf="@+id/tvShellsTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvIonizationEnergies" />
+
+        <TextView
+            android:id="@+id/tvSource"
+            style="@style/textContentElements"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:onClick="openWebBrowser"
+            android:textColor="@color/link_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline10"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/tvShellsTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvSummary" />
+
+        <TextView
+            android:id="@+id/tvSummary"
+            style="@style/textContentElements"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/guideline10"
+            app:layout_constraintHorizontal_bias="0.833"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/tvSummaryTitle" />
+
+        <TextView
+            android:id="@+id/tvElectronConfigSemantic"
+            style="@style/textContentElements"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/guideline10"
+            app:layout_constraintStart_toEndOf="@+id/tvElectronConfigSemanticTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvElectronConfig" />
+
+        <TextView
+            android:id="@+id/tvShellsTitle"
+            style="@style/textTitleElements"
+            android:layout_height="wrap_content"
+            android:text="@string/shells"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/tvIonizationEnergies" />
+
+        <TextView
+            android:id="@+id/tvSourceTitle"
+            style="@style/textTitleElements"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/source"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/tvSummary" />
+
+        <TextView
+            android:id="@+id/tvIonizationEnergiesTitle"
+            style="@style/textTitleElements"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ionization_energies"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/tvElectronPauling" />
+
+        <TextView
+            android:id="@+id/tvSummaryTitle"
+            style="@style/textTitleElements"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/summary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/tvShells" />
+
+        <TextView
+            android:id="@+id/tvElectronPaulingTitle"
+            style="@style/textTitleElements"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/electronegativity_pauling"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/tvElectronAffinity" />
+
+        <TextView
+            android:id="@+id/tvElectronAffinityTitle"
+            style="@style/textTitleElements"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/electron_affinity"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/tvElectronConfigSemantic" />
+
+        <TextView
+            android:id="@+id/tvElectronConfigSemanticTitle"
+            style="@style/textTitleElements"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/electron_configuration_semantic"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/tvElectronConfig" />
+
+        <TextView
+            android:id="@+id/tvElectronConfigTitle"
+            style="@style/textTitleElements"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/electron_configuration"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/tvCpkColorTitle" />
+
+        <TextView
+            android:id="@+id/tvCpkColorTitle"
+            style="@style/textTitleElements"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/color"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/tvMelt" />
+
+        <TextView
+            android:id="@+id/tvNamedTitle"
+            style="@style/textTitleElements"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/named"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/tvDiscover" />
+
+        <TextView
+            android:id="@+id/tvMeltTitle"
+            style="@style/textTitleElements"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/melt"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/tvAppearance" />
+
+        <TextView
+            android:id="@+id/tvAppearanceTitle"
+            style="@style/textTitleElements"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/appearance"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/tvNamed" />
+
+        <TextView
+            android:id="@+id/tvDiscoverTitle"
+            style="@style/textTitleElements"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/discover"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toTopOf="@+id/guideline14" />
+
+        <TextView
+            android:id="@+id/tvPhaseElement"
+            style="@style/textContentElements"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/guideline10"
+            app:layout_constraintStart_toEndOf="@+id/tvPhaseTitleElement"
+            app:layout_constraintTop_toBottomOf="@+id/tvPeriodElement" />
+
+        <TextView
+            android:id="@+id/tvMolarElement"
+            style="@style/textContentElements"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/guideline10"
+            app:layout_constraintStart_toEndOf="@+id/tvMolarHeatTitleElement"
+            app:layout_constraintTop_toBottomOf="@+id/tvCategoryElement" />
+
+        <TextView
+            android:id="@+id/tvPeriodElement"
+            style="@style/textContentElements"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/guideline10"
+            app:layout_constraintStart_toEndOf="@+id/tvPeriodTitleElement"
+            app:layout_constraintTop_toBottomOf="@+id/tvMolarElement" />
+
+        <TextView
+            android:id="@+id/tvCategoryElement"
+            style="@style/textContentElements"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/guideline10"
+            app:layout_constraintStart_toEndOf="@+id/tvCategoryTitleElement"
+            app:layout_constraintTop_toBottomOf="@+id/tvBoilElement" />
+
+        <TextView
+            android:id="@+id/tvBoilElement"
+            style="@style/textContentElements"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/guideline10"
+            app:layout_constraintStart_toEndOf="@+id/tvBoilTitleElement"
+            app:layout_constraintTop_toTopOf="@+id/guideline9" />
+
+        <TextView
+            android:id="@+id/tvDiscover"
+            style="@style/textContentElements"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline11"
+            app:layout_constraintStart_toEndOf="@+id/tvDiscoverTitle"
+            app:layout_constraintTop_toTopOf="@+id/guideline14" />
+
+        <TextView
+            android:id="@+id/tvPhaseTitleElement"
+            style="@style/textTitleElements"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phase"
+            app:layout_constraintStart_toStartOf="@+id/guideline15"
+            app:layout_constraintTop_toBottomOf="@+id/tvPeriodElement" />
+
+        <TextView
+            android:id="@+id/tvPeriodTitleElement"
+            style="@style/textTitleElements"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/period"
+            app:layout_constraintStart_toStartOf="@+id/guideline15"
+            app:layout_constraintTop_toBottomOf="@+id/tvMolarElement" />
+
+        <TextView
+            android:id="@+id/tvCategoryTitleElement"
+
+            style="@style/textTitleElements"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/category"
+            app:layout_constraintStart_toStartOf="@+id/guideline15"
+            app:layout_constraintTop_toBottomOf="@+id/tvBoilElement" />
+
+        <TextView
+            android:id="@+id/tvMolarHeatTitleElement"
+            style="@style/textTitleElements"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/molarHeat"
+            app:layout_constraintStart_toStartOf="@+id/guideline15"
+            app:layout_constraintTop_toBottomOf="@+id/tvCategoryElement" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.43" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.07" />
+
+        <com.example.taulaperiodica.ElementLayout
+            android:id="@+id/elementViewOnce"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_unknown"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toTopOf="@+id/guideline9"
+            app:layout_constraintVertical_bias="0.0">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.15" />
+
+            <TextView
+                android:id="@+id/tvPes"
+                style="@style/textElementLayout"
+                android:layout_marginBottom="16dp"
+                android:text="47"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline7"
+                app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+            <TextView
+                android:id="@+id/tvNumber"
+                style="@style/textElementLayout"
+                android:layout_marginTop="16dp"
+                android:text="1"
+                app:layout_constraintStart_toStartOf="@+id/guideline7"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="34dp" />
+
+            <TextView
+                android:id="@+id/tvSymbol"
+                style="@style/textElementLayout"
+                android:text="H"
+                android:textColor="@color/phase_unkown"
+                android:textSize="34sp"
+                app:layout_constraintStart_toStartOf="@+id/guideline7"
+                app:layout_constraintTop_toBottomOf="@+id/tvNumber" />
+
+            <TextView
+                android:id="@+id/tvName"
+                style="@style/textElementLayout"
+                android:text="Hidrogen"
+                app:layout_constraintStart_toStartOf="@+id/guideline7"
+                app:layout_constraintTop_toBottomOf="@+id/tvSymbol" />
+
+            <ImageButton
+                android:id="@+id/btnFavorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="#00FFFFFF"
+                android:tint="@color/star_favorite"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_star_outline_24" />
+
+        </com.example.taulaperiodica.ElementLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="22dp" />
+
+        <TextView
+            android:id="@+id/tvBoilTitleElement"
+            style="@style/textTitleElements"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/boil"
+            app:layout_constraintStart_toStartOf="@+id/guideline15"
+            app:layout_constraintTop_toTopOf="@+id/guideline9" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.47" />
+
+        <ImageView
+            android:id="@+id/ivElement"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline13"
+            app:layout_constraintEnd_toStartOf="@+id/guideline16"
+            app:layout_constraintStart_toStartOf="@+id/guideline12"
+            app:layout_constraintTop_toTopOf="@+id/guideline14"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="204dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.93" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.55" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.58" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="342dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.97" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

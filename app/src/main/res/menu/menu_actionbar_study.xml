@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/miSearch"
+        android:icon="@android:drawable/ic_menu_search"
+        android:iconTint="@color/white"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/miInfo"
+        android:icon="@drawable/ic_outline_info_24"
+        android:iconTint="@color/white"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/miFavorite"
+        android:icon="@drawable/ic_baseline_star_outline_24"
+        android:iconTint="@color/text_color"
+        android:title=""
+
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/miOrderType"
+        android:icon="@drawable/ic_baseline_order_asc_24"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/miCategory"
+        android:title="@string/menu_category">
+        <menu></menu>
+    </item>
+    <item
+        android:id="@+id/miPhase"
+        android:title="@string/menu_phase">
+        <menu></menu>
+    </item>
+    <item
+        android:id="@+id/miOrder"
+        android:title="@string/menu_order">
+        <menu>
+            <group android:checkableBehavior="single">
+
+            <item
+                android:id="@+id/miOrderSymbol"
+                android:title="@string/menu_order_symbol"
+                />
+            <item
+                android:id="@+id/miOrderNumber"
+                android:title="@string/menu_order_number"
+                />
+            </group>
+        </menu>
+    </item>
+</menu>

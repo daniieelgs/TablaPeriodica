@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="8dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvCategory"
+                style="@style/textContentElements"
+                app:layout_constraintStart_toEndOf="@+id/tvCategoryTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvBoil" />
+
+            <TextView
+                android:id="@+id/tvBoil"
+                style="@style/textContentElements"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toEndOf="@+id/tvBoilTitle"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvMolarHeat"
+                style="@style/textContentElements"
+                app:layout_constraintStart_toEndOf="@+id/tvMolarHeatTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvCategory" />
+
+            <TextView
+                android:id="@+id/tvPeriod"
+                style="@style/textContentElements"
+                app:layout_constraintStart_toEndOf="@+id/tvPeriodTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvMolarHeat" />
+
+            <TextView
+                android:id="@+id/tvPhase"
+                style="@style/textContentElements"
+                app:layout_constraintStart_toEndOf="@+id/tvPhaseTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvPeriod" />
+
+            <TextView
+                android:id="@+id/tvPhaseTitle"
+                style="@style/textTitleElements"
+                android:text="@string/phase"
+                app:layout_constraintStart_toStartOf="@+id/guideline6"
+                app:layout_constraintTop_toBottomOf="@+id/tvPeriodTitle" />
+
+            <TextView
+                android:id="@+id/tvPeriodTitle"
+                style="@style/textTitleElements"
+                android:text="@string/period"
+                app:layout_constraintStart_toStartOf="@+id/guideline6"
+                app:layout_constraintTop_toBottomOf="@+id/tvMolarHeatTitle" />
+
+            <TextView
+                android:id="@+id/tvMolarHeatTitle"
+                style="@style/textTitleElements"
+                android:text="@string/molarHeat"
+                app:layout_constraintStart_toStartOf="@+id/guideline6"
+                app:layout_constraintTop_toBottomOf="@+id/tvCategoryTitle" />
+
+            <TextView
+                android:id="@+id/tvCategoryTitle"
+                style="@style/textTitleElements"
+                android:text="@string/category"
+                app:layout_constraintStart_toStartOf="@+id/guideline6"
+                app:layout_constraintTop_toBottomOf="@+id/tvBoilTitle" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.38" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.36" />
+
+            <com.example.taulaperiodica.ElementLayout
+                android:id="@+id/elementViewOnce"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_unknown"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline5"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.15" />
+
+                <TextView
+                    android:id="@+id/tvPes"
+                    style="@style/textElementLayout"
+                    android:layout_marginBottom="16dp"
+                    android:text="47"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline7"
+                    app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+                <TextView
+                    android:id="@+id/tvNumber"
+                    style="@style/textElementLayout"
+                    android:layout_marginTop="16dp"
+                    android:text="1"
+                    app:layout_constraintStart_toStartOf="@+id/guideline7"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="34dp" />
+
+                <TextView
+                    android:id="@+id/tvSymbol"
+                    style="@style/textElementLayout"
+                    android:text="H"
+                    android:textColor="@color/phase_unkown"
+                    android:textSize="34sp"
+                    app:layout_constraintStart_toStartOf="@+id/guideline7"
+                    app:layout_constraintTop_toBottomOf="@+id/tvNumber" />
+
+                <TextView
+                    android:id="@+id/tvName"
+                    style="@style/textElementLayout"
+                    android:text="Hidrogen"
+                    app:layout_constraintStart_toStartOf="@+id/guideline7"
+                    app:layout_constraintTop_toBottomOf="@+id/tvSymbol" />
+
+                <ImageButton
+                    android:id="@+id/btnFavorite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#00FFFFFF"
+                    android:tint="@color/star_favorite"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_baseline_star_outline_24" />
+
+            </com.example.taulaperiodica.ElementLayout>
+
+            <TextView
+                android:id="@+id/tvBoilTitle"
+                style="@style/textTitleElements"
+                android:layout_marginTop="16dp"
+                android:text="@string/boil"
+                app:layout_constraintStart_toStartOf="@+id/guideline6"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:tint="@color/open_view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_open_in_new_24" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
